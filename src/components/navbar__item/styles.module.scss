@@ -1,0 +1,28 @@
+@import "../../vars";
+
+.navbar__item {
+  font-family: $font-family-premiere;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+
+  height: 45px;
+  width: 100%;
+  max-width: 280px;
+
+  padding: 12px 55px;
+
+  border: 1px solid $white;
+  border-right: none;
+
+  &:first-child {
+    border-left: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+

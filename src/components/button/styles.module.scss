@@ -1,0 +1,26 @@
+@import "../../vars";
+
+.button {
+  background-color: $mustard;
+  border: none;
+
+  font-family: $font-family-premiere;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+
+  padding: 15px 40px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($mustard, 5%);
+  }
+}
+

@@ -1,0 +1,40 @@
+@import "../../vars";
+.intro__inner {
+  padding: 60px 187px;
+
+  position: relative;
+  border: 1px solid $white;
+}
+
+.intro__title {
+  font-family: $font-family-secondary;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+
+  &:before {
+    content: "";
+    width: 160px;
+    border-bottom: 1px solid $white;
+  }
+}
+
+.intro__text {
+  font-family: $font-family-premiere;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+
+  margin-bottom: 60px;
+}
+
+.intro__img {
+  display: flex;
+  justify-content: center;
+}
