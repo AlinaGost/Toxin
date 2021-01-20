@@ -10,3 +10,11 @@
 
   margin-bottom: 550px;
 }
+
+
+@media (max-width:770px) {
+
+  .navbar {
+    display: none;
+  }
+}

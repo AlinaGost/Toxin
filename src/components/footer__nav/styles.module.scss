@@ -21,3 +21,33 @@
     }
   }
 }
+
+
+//@Media
+
+
+@media (max-width:990px) {
+  .nav {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width:770px) {
+  .nav {
+    padding: 15px 25px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:700px) {
+  .nav {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    a {
+      width: 33.333%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+}
+

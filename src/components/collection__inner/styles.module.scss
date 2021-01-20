@@ -90,3 +90,46 @@
   }
 }
 
+
+//@Media
+
+@media (max-width:1200px) {
+  .content__img__sm {
+    margin: 0 auto;
+  }
+  .img__sm {
+    max-width: 200px;
+  }
+}
+
+@media (max-width:1000px) {
+  .content {
+    display: block;
+  }
+
+  .content__right {
+    display: none;
+  }
+
+  .content__left {
+    max-width: 900px;
+
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .content__title,
+  .content__text,
+  .content__left,
+  .content__header {
+    text-align: center;
+  }
+
+}
+
+@media (max-width:575px) {
+  .content__title {
+    font-size: 30px;
+  }
+}
+

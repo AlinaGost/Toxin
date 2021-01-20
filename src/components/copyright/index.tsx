@@ -7,7 +7,7 @@ import facebook from '../../assets/images/facebook.svg';
 const Copyright = () => {
   return (
     <div className={styles.copyright}>
-      <div>Bинный бутик LE CORTE</div>
+      <div className={styles.title}>Bинный бутик LE CORTE</div>
       <div className={styles.phone}>8 (812) 123-45-67</div>
       <div className={styles.social}>
         <a href="#">
@@ -20,7 +20,7 @@ const Copyright = () => {
           <img src={facebook} alt="" />
         </a>
       </div>
-      <div>© le-corte.ru</div>
+      <div className={styles.cite}>© le-corte.ru</div>
     </div>
   );
 };

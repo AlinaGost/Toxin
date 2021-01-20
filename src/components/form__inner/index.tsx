@@ -28,7 +28,7 @@ const FormInner = ({ formTitle, formText }: IProps) => {
             <Input placeholder={'Телефон'} />
           </div>
         </div>
-        <Input placeholder={'Бутин на Невском 103'} />
+        <Input placeholder={'Бутик на Невском 103'} />
       </div>
 
       <Button buttonTitle={'Записаться'} className={styles.button__black} />

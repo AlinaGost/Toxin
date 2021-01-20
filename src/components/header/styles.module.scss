@@ -38,3 +38,24 @@
     text-decoration: underline;
   }
 }
+
+
+
+//@Media
+
+@media (max-width:770px) {
+  .header__info {
+    margin-bottom: 400px;
+  }
+}
+
+@media (max-width:575px) {
+  .header__info {
+    display: none;
+  }
+
+  .header__btn {
+    margin-top: 150px;
+  }
+}
+

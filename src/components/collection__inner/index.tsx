@@ -39,7 +39,7 @@ const CollectionInner = () => {
             <div>
               <img className={styles.img__bg} src={collection_1} alt="" />
             </div>
-            <div>
+            <div className={styles.content__img__sm}>
               <img className={styles.img__sm} src={collection_2} alt="" />
               <img className={styles.img__sm} src={collection_3} alt="" />
             </div>

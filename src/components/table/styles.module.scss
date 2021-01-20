@@ -1,4 +1,9 @@
 @import "../../vars";
+
+table {
+  border-collapse: collapse;
+}
+
 .cell {
   font-family: $font-family-premiere;
   font-size: 12px;
@@ -39,4 +44,13 @@ tr:not(:last-child) {
   line-height: 21px;
   color: $black;
   text-align: left;
+}
+
+
+//@Media
+
+@media (max-width:1000px) {
+  table {
+    margin: 0 auto;
+  }
 }

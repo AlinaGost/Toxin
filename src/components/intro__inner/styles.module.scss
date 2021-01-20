@@ -38,3 +38,45 @@
   display: flex;
   justify-content: center;
 }
+
+
+//@Media
+
+
+@media (max-width:990px) {
+
+  .intro__inner {
+    padding: 50px 130px;
+  }
+
+  .intro__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width:770px) {
+
+  .intro__inner {
+    padding: 40px 90px;
+  }
+  .intro__title {
+    font-size: 26x;
+  }
+
+  .intro__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:575px) {
+
+  .intro__inner {
+    padding: 30px 50px;
+  }
+
+  .intro__text {
+    display: none;
+  }
+}

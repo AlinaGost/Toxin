@@ -3,9 +3,8 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
-  padding: 15px 100px;
+  padding: 0 100px;
 
   border-bottom: 1px solid $white;
 
@@ -14,34 +13,24 @@
   font-weight: 600;
   color: $white;
   text-transform: uppercase;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    height: 55px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
 }
 
 .phone {
   position: relative;
   padding: 0 60px;
 
+  border-right: 1px solid $white;
+  border-left: 1px solid $white;
 
-  &:before {
-    content: "";
-    height: 55px;
-    width: 1px;
-    border: 1px solid $white;
-
-    position: absolute;
-    left: 0;
-    top: -18px;
-  }
-
-  &:after {
-    content: "";
-    height: 55px;
-    width: 1px;
-    border: 1px solid $white;
-
-    position: absolute;
-    right: 0;
-    top: -18px;
-  }
 }
 
 .social {
@@ -50,6 +39,8 @@
   justify-content: space-between;
   align-items: center;
 
+  border-right: 1px solid $white;
+
   a:not(:last-child){
     margin-right: 35px;
   }
@@ -57,15 +48,104 @@
   a:last-child {
     margin-right: 65px;
   }
+}
 
-  &:after {
-    content: "";
-    height: 55px;
-    width: 1px;
-    border: 1px solid $white;
 
-    position: absolute;
-    right: 0;
-    top: -15px;
+//@Media
+
+@media (max-width:1100px) {
+  .copyright {
+    padding: 0 50px;
+  }
+
+  .social {
+    a:last-child {
+      margin-right: 65px;
+    }
+  }
+}
+
+@media (max-width:990px) {
+
+  .social {
+
+    a:last-child {
+      margin-right: 35px;
+    }
+  }
+
+  .phone {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width:880px) {
+
+  .social {
+
+    a:first-child {
+      margin-left: 15px;
+    }
+
+    a:last-child {
+      margin-right: 25px;
+    }
+  }
+
+  .title {
+    margin-right: 15px;
+  }
+
+  .cite {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width:770px) {
+
+  .copyright {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+
+  .phone {
+    padding: 0 15px;
+    border: 0;
+  }
+
+  .social {
+    border: 0;
+
+    a:not(:last-child),
+    a:last-child {
+      margin-right: 15px;
+    }
+
+  }
+}
+
+@media (max-width:575px) {
+  .copyright {
+    flex-wrap: wrap;
+
+    div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .title {
+    margin-right: 0;
+  };
+
+  .phone {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .cite {
+    margin-left: 0;
   }
 }
