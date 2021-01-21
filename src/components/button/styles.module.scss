@@ -26,8 +26,14 @@
 
 //@Media
 
+@media (max-width:770px) {
+  .button {
+    margin-top: 150px;
+  }
+}
+
 @media (max-width:575px) {
   .button {
-    padding: 1em;
+    padding: 0.5em;
   }
 }

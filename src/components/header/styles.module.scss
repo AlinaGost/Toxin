@@ -39,13 +39,15 @@
   }
 }
 
-
+.burger {
+  width: 100%;
+}
 
 //@Media
 
 @media (max-width:770px) {
   .header__info {
-    margin-bottom: 400px;
+    padding: 0 0 15px;
   }
 }
 

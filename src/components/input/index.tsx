@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styles from './styles.module.scss';
-import { render } from 'react-dom';
 
 interface IProps {
   placeholder: string;
