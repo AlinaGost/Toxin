@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `React Effector Form`,
     description: `React Effector Form`,
-    author: `@gtosss`,
+    author: `AlinaGost`,
   },
   plugins: [
     'gatsby-plugin-root-import',

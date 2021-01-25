@@ -1,63 +1,23 @@
 @import "../../vars";
 
-.header {
-  background-image: url("../../assets/images/header-bg.jpg");
-  background-size: cover;
-  background-position: center;
-
-  padding: 30px 0 165px;
-}
-
-.header__btn {
-  display: flex;
-  justify-content: center;
-}
-
-.header__btn__right {
-  margin-right: 30px;
-}
-
-.header__info {
+.inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  font-family: $font-family-premiere;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 20px;
-  color: $white;
-
-  padding: 0 20px 15px;
-
-  a {
-    text-decoration: none;
-    color: $white;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
+  padding: 20px 0;
 }
 
-.burger {
-  width: 100%;
+.logo {
+  margin-right: 285px;
 }
 
-//@Media
-
-@media (max-width:770px) {
-  .header__info {
-    padding: 0 0 15px;
-  }
-}
-
-@media (max-width:575px) {
-  .header__info {
-    display: none;
-  }
-
-  .header__btn {
-    margin-top: 150px;
-  }
-}
+//.arrow {
+//  margin-left: 10px;
+//
+//  img:hover {
+//    stroke: #1F2041;
+//    fill: #1F2041;
+//  }
+//}
 
