@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from './styles.module.scss';
-import Item from '@components/headerItem';
+import Item from '@components/navbar';
 import arrow_down from '@assets/images/arrow_down.svg';
 
 interface IProps {
