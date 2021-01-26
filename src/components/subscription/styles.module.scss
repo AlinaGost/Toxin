@@ -1,0 +1,36 @@
+@import "../../vars";
+
+.subscription {
+  width: 100%;
+  max-width: 260px;
+
+  i {
+    color: #BC9CFF;
+    top: 45%;
+  }
+
+  ::placeholder {
+    color: lighten($grey, 55%);
+  }
+}
+
+.title {
+  font-family: $font-family-premiere;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  color: $grey;
+
+  margin-bottom: 21px;
+}
+
+.text {
+  font-family: $font-family-premiere;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: darken($grey, 25%);
+
+  margin-bottom: 20px;
+}

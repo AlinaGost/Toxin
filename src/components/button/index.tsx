@@ -3,8 +3,8 @@ import styles from './styles.module.scss';
 import classNames from 'classnames';
 
 interface IProps {
-  buttonTitle: string;
-  type?: 'primary' | 'secondary';
+  buttonTitle: string | React.ReactNode;
+  type?: 'primary' | 'secondary' | 'withArrow';
 }
 
 const Button = ({ buttonTitle, type = 'primary' }: IProps) => {

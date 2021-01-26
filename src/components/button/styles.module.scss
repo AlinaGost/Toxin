@@ -20,6 +20,10 @@
   &:active {
     color: darken($grey, 50%);
   }
+
+  i {
+    margin-left: 50px;
+  }
 }
 
 .primary {
@@ -30,9 +34,16 @@
 }
 
 .secondary {
-  padding: 8px 20px;
+  padding: 8px 18px;
   border: 2px solid $purple;
   background-color: $white;
   color: $purple;
+}
+
+.withArrow {
+  padding: 10px 15px 10px 70px;
+  background: $primaryGradient;
+  border: none;
+  color: $white;
 }
 

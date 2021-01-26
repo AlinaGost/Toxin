@@ -5,10 +5,10 @@ import toxin from '../../assets/images/toxin.svg';
 
 const Logo = () => {
   return (
-    <div className={styles.logo}>
+    <a href="#" className={styles.logo}>
       <img className={styles.img} src={logo} alt="" />
       <img className={styles.img} src={toxin} alt="" />
-    </div>
+    </a>
   );
 };
 

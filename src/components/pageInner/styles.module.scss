@@ -1,10 +1,28 @@
 @import "../../vars";
 
 .inner {
+  position: relative;
+
   background-image: url("../../assets/images/bg-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   padding: 70px 0 20px;
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  right: 170px;
+
+  font-family: $font-family-premiere;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: right;
+  color: darken($grey, 75%);
+
+  width: 100%;
+  max-width: 297px;
 }

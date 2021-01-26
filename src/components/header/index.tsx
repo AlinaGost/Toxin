@@ -2,7 +2,8 @@ import * as React from 'react';
 import styles from './styles.module.scss';
 import Button from '@components/button';
 import Logo from '@components/logo';
-import Item from '@components/headerItem';
+import Item from '@components/navbar';
+import List from '@components/subnav';
 
 const Header = () => {
   return (
@@ -13,8 +14,6 @@ const Header = () => {
             <Logo />
           </div>
           <Item itemTitle={'О нас'} />
-          <Item itemTitle={'Услуги'} />
-          <i className="fas fa-angle-down"></i>
           <Item itemTitle={'Вакансии'} />
           <Item itemTitle={'Новости'} />
           <Item itemTitle={'Соглашения'} />
