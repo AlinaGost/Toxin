@@ -14,9 +14,29 @@ const Header = () => {
             <Logo />
           </div>
           <Item itemTitle={'О нас'} />
+          <List
+            Title={
+              <span>
+                Соглашения <i className="fas fa-angle-down"></i>
+              </span>
+            }
+            itemTitle1={'Связь с нами'}
+            itemTitle2={'Сообщества'}
+            itemTitle3={'Служба поддержки'}
+          />
           <Item itemTitle={'Вакансии'} />
           <Item itemTitle={'Новости'} />
-          <Item itemTitle={'Соглашения'} />
+          <List
+            Title={
+              <span>
+                Услуги <i className="fas fa-angle-down"></i>
+              </span>
+            }
+            itemTitle1={'Прайс'}
+            itemTitle2={'Номера'}
+            itemTitle3={'Столовая'}
+            itemTitle4={'Спортивный зал'}
+          />
 
           <Button type={'secondary'} buttonTitle={'войти'} />
           <Button type={'primary'} buttonTitle={'зарегистрироваться'} />

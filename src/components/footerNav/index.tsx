@@ -14,7 +14,7 @@ const NavItem = ({ title, link1, link2, link3, link4 }: IProps) => {
     <div className={styles.item}>
       <div className={styles.title}>{title}</div>
 
-      <ul>
+      <ul className={styles.links}>
         <li>
           <a href="#">{link1}</a>
         </li>

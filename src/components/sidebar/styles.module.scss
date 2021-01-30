@@ -1,0 +1,10 @@
+@import "../../vars";
+
+.sidebar {
+  width: 266px;
+  height: calc(100% - 502px);
+  margin-right: 60px;
+
+  position: fixed;
+  top: 90px;
+}

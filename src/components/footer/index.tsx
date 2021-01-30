@@ -6,7 +6,7 @@ import Subscription from '@components/subscription';
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.intro}>
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

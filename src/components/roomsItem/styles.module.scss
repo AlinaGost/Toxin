@@ -1,0 +1,11 @@
+@import "../../vars";
+
+.item {
+  width: 100%;
+  max-width: 270px;
+}
+
+.infoRoom {
+  display: flex;
+  justify-content: space-between;
+}

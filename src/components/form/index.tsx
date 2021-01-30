@@ -49,14 +49,16 @@ const Form = ({ formTitle }: IProps) => {
       />
 
       <div className={styles.button}>
-        <Button
-          buttonTitle={
-            <span>
-              подобрать номер <i className="fas fa-arrow-right" />
-            </span>
-          }
-          type={'withArrow'}
-        />
+        <a href={'page2'}>
+          <Button
+            buttonTitle={
+              <span>
+                подобрать номер <i className="fas fa-arrow-right" />
+              </span>
+            }
+            type={'withArrow'}
+          />
+        </a>
       </div>
     </div>
   );
