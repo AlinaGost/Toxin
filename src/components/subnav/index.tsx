@@ -2,60 +2,42 @@ import * as React from 'react';
 import styles from './styles.module.scss';
 import { useState } from 'react';
 import classNames from 'classnames';
-import Item from '@components/navbar';
 import arrow_down from '@assets/images/arrow_down.svg';
 
 interface IProps {
-  Title: string | React.ReactNode;
-  itemTitle1: string;
-  itemTitle2: string;
-  itemTitle3?: string;
-  itemTitle4?: string;
+  title: string | React.ReactNode;
+  subnavTitles: string[];
 }
 
-const List = ({
-  Title,
-  itemTitle1,
-  itemTitle2,
-  itemTitle3,
-  itemTitle4,
-}: IProps) => {
+const Subnav = ({ title, subnavTitles }: IProps) => {
   const [isActive, setActive] = useState(false);
+
+  const subnavItems = subnavTitles.map(el => (
+    <li>
+      <a>{el}</a>
+    </li>
+  ));
 
   return (
     <div>
       <div className={styles.nav}>
-        <button onClick={() => setActive(!isActive)}>{Title}</button>
+        <button onClick={() => setActive(!isActive)}>
+          <div>
+            {title}
+            <i className={'fas fa-chevron-down'} />
+          </div>
+        </button>
       </div>
-
       <ul
+        onClick={() => setActive(!isActive)}
         className={classNames(styles.list, {
           [styles.active]: isActive,
         })}
       >
-        <li>
-          <a className={styles.item} href="#">
-            {itemTitle1}
-          </a>
-        </li>
-        <li>
-          <a className={styles.item} href="#">
-            {itemTitle2}
-          </a>
-        </li>
-        <li>
-          <a className={styles.item} href="#">
-            {itemTitle3}
-          </a>
-        </li>
-        <li>
-          <a className={styles.item} href="#">
-            {itemTitle4}
-          </a>
-        </li>
+        {subnavItems}
       </ul>
     </div>
   );
 };
 
-export default List;
+export default Subnav;

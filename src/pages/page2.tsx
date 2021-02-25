@@ -1,11 +1,9 @@
 import React, { memo } from 'react';
 import Header from '@components/header';
-import Inner from '@components/pageInner';
 import Footer from '@components/footer';
 import Copyright from '@components/copyright';
 import Sidebar from '@components/sidebar';
 import Rooms from '@components/rooms';
-import DatePicker from '@components/select';
 
 type Props = {};
 

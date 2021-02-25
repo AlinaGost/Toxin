@@ -1,16 +1,29 @@
 import * as React from 'react';
 import styles from './styles.module.scss';
+import NavItem from '@components/navItem';
+import Subnav from '@components/subnav';
 
-interface IProps {
-  itemTitle: string;
-}
-
-const Item = ({ itemTitle }: IProps) => {
+const Navbar = () => {
   return (
-    <a className={styles.item} href="#">
-      {itemTitle}
-    </a>
+    <div className={styles.navbar}>
+      <NavItem title={'О нас'} />
+      <Subnav
+        title={'Услуги'}
+        subnavTitles={['Бассейн', 'Ресторан', 'Банкет']}
+      />
+      <NavItem title={'Вакансии'} />
+      <NavItem title={'Новости'} />
+      <Subnav
+        title={'Соглашения'}
+        subnavTitles={[
+          'Служба поддержки',
+          'Сообщества',
+          'Связь с нами',
+          'Наша команда',
+        ]}
+      />
+    </div>
   );
 };
 
-export default Item;
+export default Navbar;

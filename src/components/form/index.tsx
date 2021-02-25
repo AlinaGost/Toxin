@@ -2,6 +2,7 @@ import * as React from 'react';
 import styles from './styles.module.scss';
 import Button from '@components/button';
 import Input from '@components/input';
+import MaterialUIPickers from '@components/datePicker';
 
 interface IProps {
   formTitle: string;
@@ -14,27 +15,11 @@ const Form = ({ formTitle }: IProps) => {
 
       <div className={styles.inputs}>
         <div className={styles.input}>
-          <Input
-            labelTitle={'Прибытие'}
-            arrow={
-              <span>
-                <i className="fas fa-angle-down" />
-              </span>
-            }
-            placeholder={'ДД-ММ-ГГ'}
-          />
+          <MaterialUIPickers label={'Прибытие'} />
         </div>
 
         <div className={styles.input}>
-          <Input
-            labelTitle={'Выезд'}
-            arrow={
-              <span>
-                <i className="fas fa-angle-down" />
-              </span>
-            }
-            placeholder={'ДД-ММ-ГГ'}
-          />
+          <MaterialUIPickers label={'Выезд'} />
         </div>
       </div>
 
